@@ -1,0 +1,102 @@
+@use 'variaveis' as variaveis;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: variaveis.$corSecundaria;
+  color: variaveis.$corPrimaria;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 25vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header__image {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.header__info {
+  flex: 1;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header__year,
+.header__rating {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.header__description {
+  font-size: 14px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details__item {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.cta {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cta__button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: variaveis.$corDoBotao;
+  color: variaveis.$corSecundaria;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken(variaveis.$corDoBotao, 10%);
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer__text {
+  font-size: 12px;
+  color: variaveis.$corPrimaria;
+}
